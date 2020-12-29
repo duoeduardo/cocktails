@@ -1,4 +1,4 @@
-Projecto que engloba lo referente al desarrollo de aplicaciones web en React. desde conceptos basicos de JSX hasta Hooks y componentes externos como React Router.
+Proyecto que engloba lo referente al desarrollo de aplicaciones web en React. desde conceptos basicos de JSX hasta Hooks y componentes externos como React Router.
 
 ### Clonar el repositorio
 
