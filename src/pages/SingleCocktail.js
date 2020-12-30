@@ -4,9 +4,26 @@ import { useParams, Link } from 'react-router-dom'
 const url = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i='
 
 const SingleCocktail = () => {
+  const {id} = useParams()
+
+  const [loading, setLoading] = React.useState(false)
+  const [cocktail,setcocktail] = React.useState(null)
+
+  React.useEffect(() => {
+    setLoading(true)
+    const getCocktail = async ()=> {
+      try {
+        const response = await fetch (`${url}${id}`)
+        const data = await response.json()
+      } catch (error) {
+        
+      }
+    }
+  }, [id])
+
   return (
     <div>
-      <h2>single cocktail page </h2>
+      <h2>{id}</h2>
     </div>
   )
 }
